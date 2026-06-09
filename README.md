@@ -13,4 +13,4 @@ Python | PyTorch | TensorFlow | LangChain | OpenAI API | FAISS | Pinecone | AWS 
 
 ## 📫 Connect
 LinkedIn: https://linkedin.com/in/saireddy2110
-Email: your email
+Email: reddysaikumar614@gmail.com
