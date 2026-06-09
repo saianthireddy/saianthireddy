@@ -1,16 +1,16 @@
-## Hi there 👋
+# Hi, I'm Sai Kumar Reddy Anthireddy 👋
 
-<!--
-**saianthireddy/saianthireddy** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+AI/ML Engineer specializing in Generative AI, LLMs, RAG pipelines, and MLOps.
 
-Here are some ideas to get you started:
+## 🔧 Tech Stack
+Python | PyTorch | TensorFlow | LangChain | OpenAI API | FAISS | Pinecone | AWS SageMaker | Docker | Kubernetes | MLflow
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🚀 Projects
+- Enterprise RAG Chatbot
+- ML Model Deployment with FastAPI
+- NLP Sentiment Analysis using BERT
+- Computer Vision Image Classification
+
+## 📫 Connect
+LinkedIn: https://linkedin.com/in/saireddy2110
+Email: your email
