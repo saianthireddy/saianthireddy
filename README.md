@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hi, I'm Sai Kumar Reddy Anthireddy 👋
+# Hi, I'm Sai Kumar Reddy  👋
 
 ### AI/ML Engineer · Generative AI · RAG Pipelines · MLOps
 
