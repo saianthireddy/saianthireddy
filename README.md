@@ -65,14 +65,11 @@ End-to-end **Retrieval-Augmented Generation platform** that answers technical su
 - 🧪 14 offline, deterministic tests + lint on CI (Python 3.11 & 3.12)
 - 🐳 Container-ready with Docker Compose and health checks
 
-## 📊 GitHub Stats
+## 🎓 Education & Certification
 
-<div align="center">
-
-![Sai's GitHub stats](https://github-readme-stats.vercel.app/api?username=saianthireddy&show_icons=true&theme=default&hide_border=true&rank_icon=github)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=saianthireddy&layout=compact&hide_border=true)
-
-</div>
+- **M.S. Advanced Data Analytics** — University of North Texas, Denton TX
+- **B.S. Computer Science** — Osmania University, Hyderabad
+- **[AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/0a980005-619e-405b-93ea-4c3e67b7bac6/linked_in_profile)** — verified on Credly
 
 ---
 
