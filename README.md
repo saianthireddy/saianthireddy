@@ -1,12 +1,12 @@
 <div align="center">
 
-# Hi, I'm Sai Kumar Reddy  👋
+# Hi, I'm Sai Kumar Reddy Anthireddy 👋
 
 ### AI/ML Engineer · Generative AI · RAG Pipelines · MLOps
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/saireddy2110)
 [![Email](https://img.shields.io/badge/Email-reddysaikumar614%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:reddysaikumar614@gmail.com)
-![AWS Certified](https://img.shields.io/badge/AWS-Solutions_Architect_Associate-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+[![AWS Certified](https://img.shields.io/badge/AWS-Solutions_Architect_Associate-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white)](https://www.credly.com/badges/0a980005-619e-405b-93ea-4c3e67b7bac6/linked_in_profile)
 
 </div>
 
@@ -18,7 +18,7 @@
 - 🎓 M.S. in Advanced Data Analytics — University of North Texas
 - ⚡ 3 years of experience shipping production ML: RAG pipelines, semantic search, churn prediction
 - 🏆 Reduced support ticket volume by **35%** with an end-to-end RAG platform
-- ☁️ AWS Certified Solutions Architect – Associate
+- ☁️ [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/0a980005-619e-405b-93ea-4c3e67b7bac6/linked_in_profile) ✅ verified on Credly
 
 ## 🛠️ Tech Stack
 
