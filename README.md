@@ -52,7 +52,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
-## 📌 Featured Project
+## 📌 Featured Projects
 
 ### [RAG Support Automation](https://github.com/saianthireddy/rag-support-automation)
 
@@ -64,6 +64,17 @@ End-to-end **Retrieval-Augmented Generation platform** that answers technical su
 - 🔍 Swappable vector backends (FAISS / Pinecone / in-memory) behind one interface
 - 🧪 14 offline, deterministic tests + lint on CI (Python 3.11 & 3.12)
 - 🐳 Container-ready with Docker Compose and health checks
+
+### [Customer Churn Prediction](https://github.com/saianthireddy/customer-churn-prediction)
+
+**Customer retention intelligence platform** — identifies at-risk customers and serves real-time churn predictions with risk bands through a REST API.
+
+`scikit-learn` `Pandas` `FastAPI` `joblib` `Docker` `GitHub Actions CI`
+
+- 🧹 Data pipeline with schema validation, deduplication, and imputation
+- 🛠️ Feature engineering + Logistic Regression / Gradient Boosting behind one pipeline
+- 📈 Cross-validated evaluation: precision, recall, F1, ROC-AUC, confusion matrix
+- ⚡ `/predict` endpoint returns churn probability + low/medium/high risk band
 
 ## 🎓 Education & Certification
 
