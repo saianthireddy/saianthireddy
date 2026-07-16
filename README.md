@@ -77,6 +77,17 @@ End-to-end **Retrieval-Augmented Generation platform** that answers technical su
 - 📈 Cross-validated evaluation: precision, recall, F1, ROC-AUC, confusion matrix
 - ⚡ `/predict` endpoint returns churn probability + low/medium/high risk band
 
+### [Enterprise MLOps Platform](https://github.com/saianthireddy/enterprise-mlops-platform)
+
+**Production-grade MLOps platform** — the full model lifecycle from commit to monitored endpoint.
+
+`MLflow-style registry` `GitHub Actions` `Docker` `Kubernetes` `SageMaker` `Slack alerts`
+
+- 🔁 Automated retraining with champion/challenger promotion (weekly cron + drift gate)
+- 🗂️ Versioned model registry with staging → production → archived transitions
+- 📉 PSI + Kolmogorov–Smirnov drift detection with Slack alerting
+- ☸️ K8s Deployment/Service/HPA manifests + SageMaker deploy adapter
+
 ## 🎓 Education & Certification
 
 - **M.S. Advanced Data Analytics** — University of North Texas, Denton TX
