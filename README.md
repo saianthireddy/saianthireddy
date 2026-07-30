@@ -55,6 +55,19 @@
 
 ## 📌 Featured Projects
 
+### [AI Doctor](https://github.com/saianthireddy/ai-doctor)
+
+**Document-grounded question answering over your own files** — six formats in, cited answers out, and an explicit refusal when the corpus doesn't cover the question.
+
+`FastAPI` `Qdrant` `BM25 + RRF` `SQLAlchemy` `Docker` `GitHub Actions CI`
+
+- 📑 Extraction for PDF/DOCX/PPTX/XLSX/HTML/Markdown that keeps section labels, so a citation names a place — `[handbook.pdf, page 3]`, not just a filename
+- 🔀 Hybrid retrieval fused with **Reciprocal Rank Fusion** rather than score normalisation — BM25 scores and cosine similarities never share a scale, so ranks get fused instead of numbers
+- 🧪 Two vector stores (Qdrant embedded + an exact in-memory reference) held to **one shared contract test suite** — which is how I found Qdrant accepting a zero query vector that the reference correctly refused
+- 🚫 Refusal gate with a relevance floor, tested with an out-of-corpus question that *must* be refused — it caught stopword overlap carrying a nonsense query past the threshold
+- 📋 [Status table](https://github.com/saianthireddy/ai-doctor#status--whats-real-what-isnt) marks every capability implemented / declared-unverified / not built, and the not-built column is deliberately not empty
+- 🧪 116 tests, 94% coverage · CI on 3.11 + 3.12 with a Docker build-and-boot check
+
 ### [Enterprise AI Platform](https://github.com/saianthireddy/enterprise-ai-platform)
 
 **Full-stack AI copilot for enterprises** — RAG chat, six specialist task handlers behind a routing layer, hybrid search, admin analytics, and the infrastructure to run it.
