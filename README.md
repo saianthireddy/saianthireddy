@@ -33,6 +33,7 @@
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 ![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black)
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
@@ -44,9 +45,13 @@
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
+**Implemented here but not benchmarked** — a fine-tuning pipeline for these exists in [intent-classification-lab](https://github.com/saianthireddy/intent-classification-lab) and is tested against a stub, but I have not published a score for it
+
+`Hugging Face Transformers` · `BERT`
+
 **Used professionally, not in these repos** — the projects here are deliberately dependency-light and run fully offline, so these don't appear in them
 
-`LangChain` · `LangGraph` · `LlamaIndex` · `Hugging Face Transformers` · `BERT` · `PyTorch` · `TensorFlow` · `ChromaDB` · `MLflow` · `AWS SageMaker` · `Azure` · `GCP` · `spaCy`
+`LangChain` · `LangGraph` · `LlamaIndex` · `TensorFlow` · `ChromaDB` · `MLflow` · `AWS SageMaker` · `Azure` · `GCP` · `spaCy`
 
 ## 📌 Featured Projects
 
@@ -61,7 +66,19 @@
 - 🔐 Read-only SQL agent with SELECT-only parsing and table whitelisting enforced **in code**, not in the prompt — the guard runs even if an LLM generated the query
 - 📊 Admin dashboard: request volume, token usage, estimated cost, latency, all from live request data
 - 🏗️ 7 Terraform modules (ALB, IAM, security, logs), K8s manifests, Airflow reindex/retrain DAG
-- 🧪 45 tests · CI runs backend lint + tests, frontend build, and both Docker images
+- 🧪 50 tests · CI runs backend lint + tests, frontend build, and both Docker images
+
+### [Intent Classification Lab](https://github.com/saianthireddy/intent-classification-lab)
+
+**Three approaches to one task on identical splits** — TF-IDF baseline, a Transformer encoder written from scratch, and a fine-tuning pipeline. The headline result is a loss, reported as such.
+
+`PyTorch` `scikit-learn` `Hugging Face` `GitHub Actions CI`
+
+- ⚖️ **The baseline wins**: macro-F1 0.463 vs 0.436, and ECE 0.137 vs 0.406. 34% of test tokens are unseen words and 73k params over 176 examples is a losing ratio — that gap *is* the argument for transfer learning
+- 🔬 Attention, multi-head projection, pre-norm blocks and masked pooling written by hand, not `nn.TransformerEncoder`
+- 🎯 Dataset built so the benchmark can fail: shared vocabulary across intents, confusable pairs, phrasing families held out *before* rendering
+- 🐛 A test caught a real NaN bug — an all-padding row masks every key, so softmax over all `-inf` poisons the forward pass
+- 📐 CI caught a claim of mine that was architecture-specific: float64 mask exactness held on aarch64, failed on x86_64
 
 ### [RAG Support Automation](https://github.com/saianthireddy/rag-support-automation)
 
