@@ -66,7 +66,7 @@
 - 🧪 Two vector stores (Qdrant embedded + an exact in-memory reference) held to **one shared contract test suite** — which is how I found Qdrant accepting a zero query vector that the reference correctly refused
 - 🚫 Refusal gate with a relevance floor, tested with an out-of-corpus question that *must* be refused — it caught stopword overlap carrying a nonsense query past the threshold
 - 📋 [Status table](https://github.com/saianthireddy/ai-doctor#status--whats-real-what-isnt) marks every capability implemented / declared-unverified / not built, and the not-built column is deliberately not empty
-- 🧪 116 tests, 94% coverage · CI on 3.11 + 3.12 with a Docker build-and-boot check
+- 🧪179 tests, 93% coverage · CI on 3.11 + 3.12 with a Docker build-and-boot check
 
 ### [Enterprise AI Platform](https://github.com/saianthireddy/enterprise-ai-platform)
 
@@ -79,7 +79,7 @@
 - 🔐 Read-only SQL agent with SELECT-only parsing and table whitelisting enforced **in code**, not in the prompt — the guard runs even if an LLM generated the query
 - 📊 Admin dashboard: request volume, token usage, estimated cost, latency, all from live request data
 - 🏗️ 7 Terraform modules (ALB, IAM, security, logs), K8s manifests, Airflow reindex/retrain DAG
-- 🧪 50 tests · CI runs backend lint + tests, frontend build, and both Docker images
+- 🧪67 tests · CI runs backend lint + tests, frontend build, and both Docker images
 
 ### [Intent Classification Lab](https://github.com/saianthireddy/intent-classification-lab)
 
@@ -100,14 +100,14 @@
 `OpenAI` `FAISS` `Pinecone` `FastAPI` `Docker` `GitHub Actions CI`
 
 - 📄 Paragraph-aware chunking with sliding-window overlap
-- 🔍 Swappable vector backends (FAISS / Pinecone / in-memory) behind one interface
+- 🔍 FAISS / Pinecone / in-memory vector-store interface — only in-memory is actually wired into the running API
 - 🚫 Out-of-corpus questions are escalated, not hallucinated
 - 📉 **Honest retrieval eval** — rebuilt the benchmark after finding the original couldn't fail: Precision@1 0.61, Recall@4 0.94, MRR 0.74 on an 18-query set with adversarial distractors
 - 🧪 14 offline deterministic tests · runs with **zero API keys**
 
 ### [Enterprise MLOps Platform](https://github.com/saianthireddy/enterprise-mlops-platform)
 
-**The full model lifecycle**, commit to monitored endpoint.
+**The full model lifecycle**, commit to a served model.
 
 `MLflow-style registry` `Kubernetes` `SageMaker adapter` `GitHub Actions` `Slack alerts`
 
@@ -126,7 +126,7 @@
 - 🕷️ Sitemap-aware crawler with HTML extraction and content-aware chunking
 - 🔎 Hybrid retrieval: BM25 lexical scoring fused with dense embeddings, over DuckDB
 - 🔌 Exposed as an MCP server so agents can query docs directly as a tool
-- 🧪 23 tests, fully offline-testable
+- 🧪 65 tests, fully offline-testable
 
 ### [Customer Churn Prediction](https://github.com/saianthireddy/customer-churn-prediction)
 
